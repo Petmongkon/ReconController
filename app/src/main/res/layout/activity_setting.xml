@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:text="Setting"
+            android:textSize="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:text=" IP     :"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/editTextIP"
+                android:singleLine="true"
+                android:layout_marginLeft="15dp"
+                android:hint="192.xxx.x.x"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:layout_width="400dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:text=" Port :"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/editTextPort"
+                android:singleLine="true"
+                android:layout_marginLeft="15dp"
+                android:hint="xxxx"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:layout_width="400dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginLeft="100dp"
+                android:id="@+id/buttonConnect"
+                android:text="Connect"
+                android:layout_width="150dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:text="Status :"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"/>
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginLeft="100dp"
+                android:text="Save"
+                android:id="@+id/buttonSave"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="80dp"
+                android:layout_height="match_parent"></View>
+            <Button
+                android:id="@+id/buttonCancle"
+                android:text="Cancle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
